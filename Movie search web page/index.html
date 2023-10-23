@@ -3,13 +3,36 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+    <title>Search movies</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <h1>TypeScript HTML App</h1>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 30vh;">
+        <h1 class="center">Search movies</h1>
+        <form id="search-form">
+            <label for="movie-title">Movie title:</label>
+            <input type="text" id="movie-title" required style="margin-bottom: 10px; width: 200px; height: 25px">
 
-    <div id="content"></div>
+            <br />
+            <label for="movie-type">Movie type:</label>
+            <select id="movie-type" size="1" style="font-size: 16px; width: 200px; height: 30px">
+                <option value="movie">Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+
+            <br />
+            <button type="submit" style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; font-size: 1em; padding: 10px;">Search</button>
+        </form>
+
+        <div id="movies"></div>
+        <div id="pagination"></div>
+        <div id="movie-details"></div>
+    </div>
+    <script>
+
+    </script>
 </body>
 </html>
